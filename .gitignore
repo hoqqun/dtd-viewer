@@ -1,0 +1,7 @@
+/target
+
+*.dtd
+!sample.dtd
+*:Zone.Identifier
+
+CLAUDE.md

@@ -1,0 +1,21 @@
+<!ENTITY copyright "© 2024 Example Corp">
+<!ENTITY author "John Doe">
+<!ENTITY % common "(#PCDATA | em | strong)*">
+
+<!ELEMENT library (book+)>
+<!ELEMENT book (title, author?, chapter+)>
+<!ELEMENT title %common;>
+<!ELEMENT author %common;>
+<!ELEMENT chapter (heading, paragraph*)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT paragraph %common;>
+<!ELEMENT em (#PCDATA)>
+<!ELEMENT strong (#PCDATA)>
+
+<!ATTLIST book
+    id ID #REQUIRED
+    lang CDATA #IMPLIED
+>
+<!ATTLIST chapter
+    num NMTOKEN #REQUIRED
+>
