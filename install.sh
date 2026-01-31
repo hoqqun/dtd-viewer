@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO="https://github.com/hoku/dtd-viewer.git"
+REPO="https://github.com/hoqqun/dtd-viewer.git"
 INSTALL_DIR="${INSTALL_DIR:-/usr/local/bin}"
 BINARY_NAME="dtd-viewer"
 
