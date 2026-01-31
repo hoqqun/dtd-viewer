@@ -25,6 +25,11 @@ echo "Building (release)..."
 cargo build --release --manifest-path "$TMPDIR/dtd-viewer/Cargo.toml"
 
 echo "Installing to ${INSTALL_DIR}/${BINARY_NAME}..."
-install -Dm755 "$TMPDIR/dtd-viewer/target/release/${BINARY_NAME}" "${INSTALL_DIR}/${BINARY_NAME}"
+SUDO=""
+if [ ! -w "$INSTALL_DIR" ]; then
+    echo "Elevated permissions required. Running with sudo..."
+    SUDO="sudo"
+fi
+$SUDO install -Dm755 "$TMPDIR/dtd-viewer/target/release/${BINARY_NAME}" "${INSTALL_DIR}/${BINARY_NAME}"
 
 echo "Done. Run 'dtd-viewer --help' to get started."
