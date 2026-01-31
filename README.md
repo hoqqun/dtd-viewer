@@ -9,19 +9,19 @@ A CLI tool to visualize DTD (Document Type Definition) file structures. Parses X
 ### One-liner
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/hoku/dtd-viewer/master/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/hoqqun/dtd-viewer/main/install.sh | bash
 ```
 
 To change the install directory:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/hoku/dtd-viewer/master/install.sh | INSTALL_DIR=~/.local/bin bash
+curl -fsSL https://raw.githubusercontent.com/hoqqun/dtd-viewer/main/install.sh | INSTALL_DIR=~/.local/bin bash
 ```
 
 ### From source
 
 ```bash
-git clone https://github.com/hoku/dtd-viewer.git
+git clone https://github.com/hoqqun/dtd-viewer.git
 cd dtd-viewer
 cargo install --path .
 ```

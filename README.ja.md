@@ -9,19 +9,19 @@ DTDファイルの構造を可視化するCLIツール。XMLのDTD（Document Ty
 ### ワンライナー
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/hoku/dtd-viewer/master/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/hoqqun/dtd-viewer/main/install.sh | bash
 ```
 
 インストール先を変更する場合:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/hoku/dtd-viewer/master/install.sh | INSTALL_DIR=~/.local/bin bash
+curl -fsSL https://raw.githubusercontent.com/hoqqun/dtd-viewer/main/install.sh | INSTALL_DIR=~/.local/bin bash
 ```
 
 ### ソースから
 
 ```bash
-git clone https://github.com/hoku/dtd-viewer.git
+git clone https://github.com/hoqqun/dtd-viewer.git
 cd dtd-viewer
 cargo install --path .
 ```
